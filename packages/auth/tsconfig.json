@@ -1,0 +1,7 @@
+{
+  "extends": "@ai-whatsnew/config/tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "strictNullChecks": true
+  }
+}

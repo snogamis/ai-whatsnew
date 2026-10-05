@@ -1,0 +1,24 @@
+{
+  "name": "@ai-whatsnew/api",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-whatsnew/auth": "workspace:*",
+    "@ai-whatsnew/db": "workspace:*",
+    "@trpc/client": "catalog:",
+    "@trpc/server": "catalog:",
+    "@types/pg": "^8.23.1",
+    "drizzle-orm": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@ai-whatsnew/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}

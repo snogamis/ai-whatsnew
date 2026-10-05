@@ -1,0 +1,22 @@
+{
+  "name": "@ai-whatsnew/auth",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-whatsnew/db": "workspace:*",
+    "@better-auth/drizzle-adapter": "1.7.5",
+    "better-auth": "catalog:",
+    "drizzle-orm": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@ai-whatsnew/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}
